@@ -1,0 +1,75 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+  padding: 30px;
+  min-width: 360px;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0px 5px 20px rgba(27, 108, 114, 0.25);
+}
+
+.card::before {
+  content: "";
+
+  position: absolute;
+  left: 10px;
+  bottom: -10px;
+  z-index: -1;
+
+  width: calc(100% - 20px);
+  height: 100%;
+
+  background: #ffffff;
+  box-shadow: 0px 5px 20px rgba(27, 108, 114, 0.25);
+  border-radius: 6px;
+}
+
+.cardCity {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+  color: #000;
+}
+
+.cardCity span {
+  display: inline-block;
+  padding: 3px 5px;
+  background: #e5464f;
+  border-radius: 6px;
+  vertical-align: text-top;
+
+  color: #fff;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.cardWeather {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardValue {
+  font-size: 92px;
+  line-height: 1;
+  color: #000;
+}
+
+.cardValue sup {
+  font-size: 50%;
+  vertical-align: super;
+}
+
+.cardDesc {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.cardImg {
+  height: 200px;
+  width: 200px;
+}
